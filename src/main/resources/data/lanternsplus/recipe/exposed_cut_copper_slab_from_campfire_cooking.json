@@ -1,0 +1,9 @@
+{
+  "type": "lanternsplus:copper_campfire",
+  "experience": 0,
+  "cookingtime": 100,
+  "ingredient": "minecraft:cut_copper_slab",
+  "result": {
+    "id": "minecraft:exposed_cut_copper_slab"
+  }
+}

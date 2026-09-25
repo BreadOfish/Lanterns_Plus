@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "lanternsplus:block/gilded_chain",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "lanternsplus:block/gilded_chain"
+    },
+    "axis=z": {
+      "model": "lanternsplus:block/gilded_chain",
+      "x": 90
+    }
+  }
+}

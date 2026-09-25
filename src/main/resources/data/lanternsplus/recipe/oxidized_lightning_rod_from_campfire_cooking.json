@@ -1,0 +1,9 @@
+{
+  "type": "lanternsplus:copper_campfire",
+  "experience": 0,
+  "cookingtime": 100,
+  "ingredient": "minecraft:weathered_lightning_rod",
+  "result": {
+    "id": "minecraft:oxidized_lightning_rod"
+  }
+}

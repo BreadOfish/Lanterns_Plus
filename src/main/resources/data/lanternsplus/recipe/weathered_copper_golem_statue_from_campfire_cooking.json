@@ -1,0 +1,9 @@
+{
+  "type": "lanternsplus:copper_campfire",
+  "experience": 0,
+  "cookingtime": 100,
+  "ingredient": "minecraft:exposed_copper_golem_statue",
+  "result": {
+    "id": "minecraft:weathered_copper_golem_statue"
+  }
+}

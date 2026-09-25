@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "lanternsplus:block/gilded_purpur_lantern"
+    },
+    "hanging=true": {
+      "model": "lanternsplus:block/gilded_purpur_lantern_hanging"
+    }
+  }
+}

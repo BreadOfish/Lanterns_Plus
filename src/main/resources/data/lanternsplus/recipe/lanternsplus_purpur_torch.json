@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "P",
+    "/"
+  ],
+  "key": {
+    "#": "minecraft:blaze_powder",
+    "P": "minecraft:popped_chorus_fruit",
+    "/": "minecraft:stick"
+  },
+  "result": {
+    "id": "lanternsplus:purpur_torch",
+    "amount": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "lanternsplus:copper_campfire",
+  "experience": 0,
+  "cookingtime": 100,
+  "ingredient": "minecraft:weathered_cut_copper_stairs",
+  "result": {
+    "id": "minecraft:oxidized_cut_copper_stairs"
+  }
+}

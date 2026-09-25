@@ -1,0 +1,9 @@
+{
+  "type": "lanternsplus:copper_campfire",
+  "experience": 0,
+  "cookingtime": 100,
+  "ingredient": "minecraft:copper_door",
+  "result": {
+    "id": "minecraft:exposed_copper_door"
+  }
+}

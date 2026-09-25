@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#/#",
+    "L=L"
+  ],
+  "key": {
+    "#": "minecraft:stick",
+    "/": "minecraft:copper_torch",
+    "L": "#minecraft:logs",
+    "=": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "lanternsplus:copper_campfire"
+  }
+}

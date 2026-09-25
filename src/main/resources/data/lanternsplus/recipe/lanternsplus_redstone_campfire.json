@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#/#",
+    "L.L"
+  ],
+  "key": {
+    "#": "minecraft:stick",
+    "/": "minecraft:redstone_torch",
+    "L": "#minecraft:logs",
+    ".": "minecraft:redstone"
+  },
+  "result": {
+    "id": "lanternsplus:redstone_campfire"
+  }
+}

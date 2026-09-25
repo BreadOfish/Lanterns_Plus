@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "lanternsplus",
+	"version": "${version}",
+	"name": "lanternsplus",
+	"description": "A mod adding new Lanterns and Campfires.",
+	"authors": [
+		"Breadofish"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/lanternsplus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.breadofish.lanternsplus.Lanternsplus"
+		],
+		"fabric-datagen": [
+          "com.breadofish.lanternsplus.LanternsPlusDataGenerator"
+		],
+      "client": [
+        "com.breadofish.lanternsplus.LanternsPlusClient"
+      ]
+	},
+	"mixins": [
+		"lantersplus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_lantern",
+  "textures": {
+    "lantern": "lanternsplus:block/redstone_lantern"
+  }
+}
