@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.crafting.*;
 
 public class CopperCampfireRecipe extends AbstractCookingRecipe {
-    public static final MapCodec<CopperCampfireRecipe> MAP_CODEC = cookingMapCodec(CopperCampfireRecipe::new);
+    public static final MapCodec<CopperCampfireRecipe> MAP_CODEC = cookingMapCodec(CopperCampfireRecipe::new, 100);
     public static final StreamCodec<RegistryFriendlyByteBuf, CopperCampfireRecipe> STREAM_CODEC = cookingStreamCodec(CopperCampfireRecipe::new);
     public static final RecipeSerializer<CopperCampfireRecipe> SERIALIZER;
 

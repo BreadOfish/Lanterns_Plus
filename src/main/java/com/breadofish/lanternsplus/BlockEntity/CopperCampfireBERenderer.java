@@ -51,6 +51,7 @@ public class CopperCampfireBERenderer implements BlockEntityRenderer<CopperCampf
 
     }
 
+
     @Override
     public void submit(final CopperCampfireRenderState state, final PoseStack poseStack, final SubmitNodeCollector submitNodeCollector, final CameraRenderState camera) {
         Direction facing = state.facing;
@@ -63,14 +64,13 @@ public class CopperCampfireBERenderer implements BlockEntityRenderer<CopperCampf
                 poseStack.translate(0.5F, 0.44921875F, 0.5F);
                 Direction direction = Direction.from2DDataValue((slot + facing.get2DDataValue()) % 4);
                 float angle = -direction.toYRot();
-                poseStack.rotateDegrees(Axis.YP, angle);
-                poseStack.rotateDegrees(Axis.XP, 90.0F);
+                poseStack.mulPose(Axis.YP.rotationDegrees(angle));
+                poseStack.mulPose(Axis.XP.rotationDegrees(90.0F));
                 poseStack.translate(-0.3125F, -0.3125F, 0.0F);
                 poseStack.scale(0.375F, 0.375F, 0.375F);
                 itemState.submit(poseStack, submitNodeCollector, state.lightCoords, OverlayTexture.NO_OVERLAY, 0);
                 poseStack.popPose();
             }
         }
-
     }
 }

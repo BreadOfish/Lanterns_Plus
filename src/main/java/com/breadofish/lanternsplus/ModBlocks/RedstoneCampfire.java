@@ -12,7 +12,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CampfireBlock;
-import net.minecraft.world.level.block.RedstoneWireBlock;
+import net.minecraft.world.level.block.RedStoneWireBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.redstone.Orientation;
 import org.jspecify.annotations.Nullable;
@@ -28,7 +28,7 @@ public class RedstoneCampfire extends CampfireBlock {
         int power = level.getSignal(inputPos, inputDir);
         if (power >= 15) return power;
         BlockState inputState = level.getBlockState(inputPos);
-        return Math.max(power, inputState.is(Blocks.REDSTONE_WIRE) ? inputState.getValue(RedstoneWireBlock.POWER) : 0);
+        return Math.max(power, inputState.is(Blocks.REDSTONE_WIRE) ? inputState.getValue(RedStoneWireBlock.POWER) : 0);
     }
 
     @Override
@@ -52,7 +52,7 @@ public class RedstoneCampfire extends CampfireBlock {
 
         if (!powered && level instanceof ServerLevel serverLevel) {   // going out only
             level.levelEvent(null, 1009, pos, 0);                     // fizz sound
-            douse(null, level, pos, state);                           // resets block entity, game event
+            dowse(null, level, pos, state);                           // resets block entity, game event
 
             ParticleOptions smoke = state.getValue(SIGNAL_FIRE)
                     ? ParticleTypes.CAMPFIRE_SIGNAL_SMOKE
@@ -71,10 +71,7 @@ public class RedstoneCampfire extends CampfireBlock {
         level.updateNeighborsAt(pos.relative(state.getValue(FACING)), this);
     }
 
-    @Override
-    protected boolean shouldRedstoneWireConnectTo(BlockState state, BlockGetter level, BlockPos pos, @Nullable Direction direction) {
-        return true;
-    }
+
 
     @Override
     protected int getAnalogOutputSignal(BlockState state, Level level, BlockPos pos, Direction direction) {

@@ -23,13 +23,13 @@ public class ModBlocks {
     public static final Block PURPUR_TORCH = registerBlock(
             "purpur_torch",
             properties -> new TorchBlock(ModParticles.PURPUR_FLAME, properties),
-            BlockBehaviour.Properties.of().noCollision().instabreak().lightLevel(value -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.POPPED),
+            BlockBehaviour.Properties.of().noCollision().instabreak().lightLevel(value -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.NORMAL),
             false
     );
     public static final Block PURPUR_WALL_TORCH = registerBlock(
             "purpur_wall_torch",
             properties -> new WallTorchBlock(ModParticles.PURPUR_FLAME, properties),
-            BlockBehaviour.Properties.of().noCollision().instabreak().lightLevel(value -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.POPPED),
+            BlockBehaviour.Properties.of().noCollision().instabreak().lightLevel(value -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.NORMAL),
             false
     );
 
@@ -42,26 +42,26 @@ public class ModBlocks {
     public static final Block REDSTONE_LANTERN = registerBlock(
             "redstone_lantern",
             RedstoneLanternBlock::new,
-            BlockBehaviour.Properties.of().lightLevel(value -> 14).sound(SoundType.LANTERN).pushReaction(PushReaction.PUSH_PULL),
+            BlockBehaviour.Properties.of().lightLevel(value -> 14).sound(SoundType.LANTERN).pushReaction(PushReaction.NORMAL),
             true
     );
     public static final Block GILDED_REDSTONE_LANTERN = registerBlock(
             "gilded_redstone_lantern",
             RedstoneLanternBlock::new,
-            BlockBehaviour.Properties.of().lightLevel(value -> 14).sound(SoundType.LANTERN).pushReaction(PushReaction.PUSH_PULL),
+            BlockBehaviour.Properties.of().lightLevel(value -> 14).sound(SoundType.LANTERN).pushReaction(PushReaction.NORMAL),
             true
     );
     public static final Block GILDED_LANTERN = registerBlock(
             "gilded_lantern",
             LanternBlock::new,
-            BlockBehaviour.Properties.of().lightLevel(value -> 14).sound(SoundType.LANTERN).pushReaction(PushReaction.PUSH_PULL),
+            BlockBehaviour.Properties.of().lightLevel(value -> 14).sound(SoundType.LANTERN).pushReaction(PushReaction.NORMAL),
             true
     );
 
     public static final Block GILDED_PURPUR_LANTERN = registerBlock(
             "gilded_purpur_lantern",
             LanternBlock::new,
-            BlockBehaviour.Properties.of().lightLevel(value -> 14).sound(SoundType.LANTERN).pushReaction(PushReaction.PUSH_PULL),
+            BlockBehaviour.Properties.of().lightLevel(value -> 14).sound(SoundType.LANTERN).pushReaction(PushReaction.NORMAL),
             true
     );
 
@@ -69,7 +69,7 @@ public class ModBlocks {
     public static final Block PURPUR_LANTERN = registerBlock(
             "purpur_lantern",
             LanternBlock::new,
-            BlockBehaviour.Properties.of().lightLevel(value -> 14).sound(SoundType.LANTERN).pushReaction(PushReaction.PUSH_PULL),
+            BlockBehaviour.Properties.of().lightLevel(value -> 14).sound(SoundType.LANTERN).pushReaction(PushReaction.NORMAL),
             true
     );
 
