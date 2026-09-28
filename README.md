@@ -1,4 +1,4 @@
-# Lanterns
+# Lanterns Plus
 
 ## Setup
 
